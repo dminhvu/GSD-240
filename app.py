@@ -4,8 +4,8 @@ from datetime import datetime
 import pandas as pd
 import streamlit as st
 
-st.set_page_config(page_title="GA-240: A2Z Flashing")
-st.title("GA-240: A2Z Flashing")
+st.set_page_config(page_title="GSD-240: A2Z Flashing")
+st.title("GSD-240: A2Z Flashing")
 
 
 def process_file(file):
