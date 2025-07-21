@@ -34,15 +34,15 @@ def process_file(file):
     # Find columns by matching common variations
     for col in df.columns:
         col_lower = col.lower().strip()
-        if "customer" in col_lower:
+        if "customer" == col_lower:
             required_cols["customer"] = col
-        elif "order nbr." in col_lower:
+        elif "order nbr." == col_lower:
             required_cols["order_number"] = col
-        elif "reference nbr." in col_lower:
+        elif "reference nbr." == col_lower:
             required_cols["reference"] = col
-        elif "date" in col_lower:
+        elif "date" == col_lower:
             required_cols["date"] = col
-        elif "amount" in col_lower:
+        elif "amount" == col_lower:
             required_cols["amount"] = col
 
     # Check if all required columns are found
