@@ -154,6 +154,17 @@ def process_file(file):
         & (output["Document Number"].astype(str).str.strip() != "")
     ].reset_index(drop=True)
 
+    # 6. Reorder columns
+    output = output[
+        [
+            "Debtor Reference",
+            "Transaction Type",
+            "Document Number",
+            "Document Date",
+            "Document Balance",
+        ]
+    ]
+
     return output
 
 
